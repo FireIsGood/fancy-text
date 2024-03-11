@@ -1,0 +1,27 @@
+---
+import { ViewTransitions } from "astro:transitions";
+
+interface Props {
+    title: string;
+    description: string;
+    viewTransition: boolean;
+}
+
+const { title, description, viewTransition } = Astro.props;
+---
+
+<head>
+    {viewTransition && <ViewTransitions />}
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <title>{title}</title>
+</head>
