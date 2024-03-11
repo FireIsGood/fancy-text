@@ -62,7 +62,9 @@ There are additional commands you can run from the terminal:
 
 ## Contributing
 
-No.
+Pull requests for add additional maps are welcome! If you want to add features,
+please [open an Issue](https://github.com/FireIsGood/fancy-text/issues) before
+making a pull request.
 
 ## License
 
