@@ -62,9 +62,12 @@ There are additional commands you can run from the terminal:
 
 ## Contributing
 
-Pull requests for add additional maps are welcome! If you want to add features,
-please [open an Issue](https://github.com/FireIsGood/fancy-text/issues) before
-making a pull request.
+Pull requests for add additional maps are welcome! You can find all the maps in the [/src/scripts/maps.ts](https://github.com/FireIsGood/fancy-text/blob/main/src/scripts/maps.ts) file.
+
+If you want to add features, please [open an issue](https://github.com/FireIsGood/fancy-text/issues) before making a pull request.
+
+Please do build in pull requests, as that can cause issues with the automatic
+merging.
 
 ## License
 
