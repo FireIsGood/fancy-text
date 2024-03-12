@@ -40,3 +40,21 @@
     <dd>{mapText(boringText || exampleNumbers, map)}</dd>
   {/each}
 </dl>
+
+<style>
+  dt {
+    color: var(--pico-secondary);
+    font-size: 0.8em;
+  }
+
+  dd + dt {
+    margin-top: 0.5rem;
+  }
+
+  dd {
+    margin-inline-start: 0;
+    border: var(--pico-border-width) solid var(--pico-form-element-border-color);
+    background-color: var(--pico-form-element-background-color);
+    padding: 0.1rem 0.5rem;
+  }
+</style>
