@@ -26,7 +26,6 @@
 </label>
 <hr />
 <p>Text maps:</p>
-<p></p>
 <dl>
   {#each textConversion as map}
     <dt>{map.title} <em>({Object.keys(map.map).length} maps)</em></dt>
