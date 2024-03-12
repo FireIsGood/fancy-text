@@ -75,7 +75,7 @@ Pull requests for add additional maps are welcome! You can find all the maps in 
 
 If you want to add features, please [open an issue](https://github.com/FireIsGood/fancy-text/issues) before making a pull request.
 
-Please do build in pull requests, as that can cause issues with the automatic
+Please **do not build in pull requests**, as that can cause issues with the automatic
 merging.
 
 ## License
