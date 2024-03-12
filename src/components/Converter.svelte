@@ -2,7 +2,9 @@
   import { allConversionMaps, type ConversionMap } from "@/scripts/maps";
 
   let boringText = "";
-  const exampleText = "Sample Text | ABCDEFGHIJKLMNOPQRSTUVWXYZ | abcdefghijklmnopqrstuvwxyz";
+  let showAlphabetSampleText = false;
+  const exampleText = "Sample Text";
+  const exampleTextFull = "ABCDEFGHIJKLMNOPQRSTUVWXYZ | abcdefghijklmnopqrstuvwxyz";
   const exampleNumbers = "0123456789";
 
   const textConversion: ConversionMap[] = allConversionMaps.text;
@@ -24,19 +26,23 @@
   Boring Text:
   <input bind:value={boringText} placeholder="Boring text here..." />
 </label>
+<label>
+  <input type="checkbox" disabled={boringText.trim() !== ""} bind:checked={showAlphabetSampleText} />
+  Full alphabet sample text
+</label>
 <hr />
 <p>Text maps:</p>
 <dl>
   {#each textConversion as map}
     <dt>{map.title} <em>({Object.keys(map.map).length} maps)</em></dt>
-    <dd>{mapText(boringText || exampleText, map)}</dd>
+    <dd>{mapText(boringText.trim() || (showAlphabetSampleText ? exampleTextFull : exampleText), map)}</dd>
   {/each}
 </dl>
 <p>Number maps:</p>
 <dl>
   {#each numberConversion as map}
     <dt>{map.title} <em>({Object.keys(map.map).length} maps)</em></dt>
-    <dd>{mapText(boringText || exampleNumbers, map)}</dd>
+    <dd>{mapText(boringText.trim() || exampleNumbers, map)}</dd>
   {/each}
 </dl>
 
