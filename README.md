@@ -4,7 +4,7 @@ A website to transform English text to fancy Unicode versions.
 
 e.g. `Now this is epic -> 𝐍𝐨𝐰 𝐭𝐡𝐢𝐬 𝐢𝐬 𝐞𝐩𝐢𝐜`
 
-The current version supports a few Mathematical Alphanumeric Symbols and some of the numbered variants. If you don't see a variant you want, feel free to add it!
+The current version supports a few Mathematical Alphanumeric Symbols and some of the numbered variants. If you don't see a variant you want, [feel free to add it](#Contributing)!
 
 ## Running Locally
 
