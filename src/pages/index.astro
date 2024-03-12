@@ -16,8 +16,12 @@ import ThemeToggle from "@/components/ThemeToggle.svelte";
         href="https://unicode-explorer.com/">Unicode Explorer</a
       >, more specifically most of these come from the <a href="https://unicode-explorer.com/b/1D400"
         >Mathematical Alphanumeric Symbols</a
-      > section. Some symbols like "e" are marked as "reserved" in the unicode block when they already have a symbol from
-      elsewhere.
+      > section.
+    </p>
+    <p>
+      Some symbols are marked as "reserved" in their unicode block when they already have a symbol from elsewhere. For
+      these, I followed the replacements through to find what the Unicode website said was related. If there are weird
+      discrepencies, that's probably why.
     </p>
     <Converter client:load />
   </main>
