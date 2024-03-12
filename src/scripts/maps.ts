@@ -232,6 +232,7 @@ const scriptSymbols: ConversionMap = {
     M: "𝒨",
     N: "𝒩",
     O: "𝒪",
+    P: "𝒫",
     Q: "𝒫",
     R: "ℛ", // Reserved, using alternate
     S: "𝒮",
@@ -497,6 +498,7 @@ const circledLatinLetters: ConversionMap = {
     c: "ⓒ",
     d: "ⓓ",
     e: "ⓔ",
+    f: "ⓕ",
     g: "ⓖ",
     h: "ⓗ",
     i: "ⓘ",
