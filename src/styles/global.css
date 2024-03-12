@@ -2,6 +2,12 @@
 :root {
   --pico-transition: 200ms ease-out;
 }
+a,
+input,
+select,
+textarea {
+  transition: unset;
+}
 
 [data-theme="light"] {
   /* Must include website namespace */
