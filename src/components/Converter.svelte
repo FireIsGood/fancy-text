@@ -5,14 +5,14 @@
   const exampleText = "Sample Text | ABCDEFGHIJKLMNOPQRSTUVWXYZ | abcdefghijklmnopqrstuvwxyz";
   const exampleNumbers = "0123456789";
 
-  let textConversion: ConversionMap[] = allConversionMaps.text;
-  let numberConversion: ConversionMap[] = allConversionMaps.numbers;
+  const textConversion: ConversionMap[] = allConversionMaps.text;
+  const numberConversion: ConversionMap[] = allConversionMaps.numbers;
 
   function mapText(inputText: string, map: ConversionMap): string {
-    let outputText: string = inputText
+    const outputText: string = inputText
       .split("")
       .map((char) => {
-        return map.map[char] ?? char; // Convert if possible or keep
+        return map.map[char] ?? char; // Convert if possible or pass through
       })
       .join("");
 
