@@ -1,11 +1,15 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import Converter from "@/components/Converter.svelte";
+import ThemeToggle from "@/components/ThemeToggle.svelte";
 ---
 
 <Layout title="Fancy Text" description="Fancy Text conversion">
-  <main class="container">
+  <header class="container">
     <h1>Fancy Text</h1>
+    <ThemeToggle client:load />
+  </header>
+  <main class="container">
     <p>A converter from boring normal text to fancy Unicode text.</p>
     <p>
       This uses various Unicode Blocks such as the mathematical symbols. For more information, go check out <a
@@ -18,3 +22,15 @@ import Converter from "@/components/Converter.svelte";
     <Converter client:load />
   </main>
 </Layout>
+
+<style>
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    > * {
+      margin: 0;
+    }
+  }
+</style>

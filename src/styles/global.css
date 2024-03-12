@@ -1,0 +1,4 @@
+/* Pico overrides */
+:root {
+  --pico-transition: 200ms ease-out;
+}
