@@ -5,10 +5,14 @@ export type ConversionMap = {
 
 // These are all maps from a basic letter to a unicode character
 // The characters are copied over from Unicode Explorer (https://unicode-explorer.com/)
+// If you are adding new maps, please add them either
+//   1. In the order they are found in Unicode Explorer
+//   2. At the bottom of their section (text goes just above numbers, etc.)
 
-// Template
+// Template for new maps
 /*
-const example: ConversionMap = {
+// name of this map
+const nameOfThisMap: ConversionMap = {
   title: "name of this map",
   map: {
     // Uppercase
