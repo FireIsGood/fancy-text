@@ -1,24 +1,27 @@
 <script lang="ts">
   import { allConversionMaps, type ConversionMap } from "@/scripts/maps";
 
+  // State
   let boringText = "";
   let showAlphabetSampleText = false;
+
+  // Sample text
   const exampleText = "Sample Text";
   const exampleTextFull = "ABCDEFGHIJKLMNOPQRSTUVWXYZ | abcdefghijklmnopqrstuvwxyz";
   const exampleNumbers = "0123456789";
 
+  // Mappings
   const textConversion: ConversionMap[] = allConversionMaps.text;
   const numberConversion: ConversionMap[] = allConversionMaps.numbers;
 
+  // Funciton to apply a mapping over a string
   function mapText(inputText: string, map: ConversionMap): string {
-    const outputText: string = inputText
+    return inputText
       .split("")
       .map((char) => {
         return map.map[char] ?? char; // Convert if possible or pass through
       })
       .join("");
-
-    return outputText;
   }
 </script>
 
@@ -47,6 +50,7 @@
 </dl>
 
 <style>
+  /* Fix description lists */
   dt {
     color: var(--pico-secondary);
     font-size: 0.8em;
