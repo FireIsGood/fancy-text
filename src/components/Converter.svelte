@@ -66,4 +66,8 @@
     background-color: var(--pico-form-element-background-color);
     padding: 0.1rem 0.5rem;
   }
+
+  label:has(input[disabled]) {
+    color: var(--pico-muted-color);
+  }
 </style>
