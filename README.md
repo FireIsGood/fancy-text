@@ -2,7 +2,14 @@
 
 A website to transform English text to fancy Unicode versions.
 
-## Installation
+e.g. `Now this is epic -> 𝐍𝐨𝐰 𝐭𝐡𝐢𝐬 𝐢𝐬 𝐞𝐩𝐢𝐜`
+
+The current version supports a few Mathematical Alphanumeric Symbols and some of the numbered variants. If you don't see a variant you want, feel free to add it!
+
+## Running Locally
+
+<details>
+<summary>Instructions to run the project on your machine. If you just want to add a map, read about contributing below.</summary>
 
 ### Prerequisites
 
@@ -60,9 +67,11 @@ There are additional commands you can run from the terminal:
 | `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `pnpm astro -- --help` | Get help using the Astro CLI                     |
 
+</details>
+
 ## Contributing
 
-Pull requests for add additional maps are welcome! You can find all the maps in the [/src/scripts/maps.ts](https://github.com/FireIsGood/fancy-text/blob/main/src/scripts/maps.ts) file.
+Pull requests for add additional maps are welcome! You can find all the maps in the [/src/scripts/maps.ts](https://github.com/FireIsGood/fancy-text/blob/main/src/scripts/maps.ts) file along with a small example and directions.
 
 If you want to add features, please [open an issue](https://github.com/FireIsGood/fancy-text/issues) before making a pull request.
 
